@@ -13,6 +13,11 @@ getPageData:{
                 groupName:'',    
                 state:7
             },
+            findType:'page', //如果直接根据页数查询,如果没有配置此项，默认按字段起始页查询（可无）
+            translate:{  //字段名转换
+                resTotal:'iTotalRecords',//回调的总条数名字，默认为iTotalRecords（可无）
+                startRow:'startRow2',//开始页名字，默认startRow（可无）
+            },
             actIndex:0,    //保存当前显示的数据是第几条开始的
             dataTotal:'', //保存一数据总数
             count:'',//保存页数总数
