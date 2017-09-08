@@ -17,7 +17,8 @@ getPageData:{
             translate:{  //字段名转换
                 resTotal:'iTotalRecords',//回调的总条数名字，默认为iTotalRecords（可无）
                 startRow:'startRow2',//开始页名字，默认startRow（可无）
-            },
+                pageSize：'pageSize2',//查询页数,默认pageSize（可无）
+            },
             actIndex:0,    //保存当前显示的数据是第几条开始的
             dataTotal:'', //保存一数据总数
             count:'',//保存页数总数
