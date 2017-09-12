@@ -10,9 +10,7 @@
             <a v-if="actIndex<count"  @click="actIndex++" class="iconfont">&#xe6a7;</a>
             <a v-if="actIndex!=count" @click="actIndex=count">末页</a>
       </span>
-  <!--      <span class="gotoPage" style="margin-left: 0">
-        共{{totalRecords}}条记录
-      </span>-->
+      <span class="gotoPage" style="margin-left: 0">共{{totalRecords}}条记录</span>
         <span class="gotoPage">
             每页显示
             <select  class="pageSelect" v-model="pageLength">
