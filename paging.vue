@@ -5,8 +5,8 @@
             <a v-if="actIndex!=1" @click="actIndex=1">首页</a>
             <a v-if="actIndex>1" @click="actIndex--" class="iconfont">&#xe697;</a>
             <a v-if="actIndex>3&&count>5" style="cursor: auto">...</a>
-          <a v-for="(item,index) in pagingNum" :class="{pageAct:item==actIndex}" v-if="index<count" @click="actIndex=item*1">{{item}}</a>
-          <a v-if="actIndex<(count-2)&&count>5" style="cursor: auto">....</a>
+            <a v-for="(item,index) in pagingNum" :class="{pageAct:item==actIndex}" v-if="index<count" @click="actIndex=item*1">{{item}}</a>
+            <a v-if="actIndex<(count-2)&&count>5" style="cursor: auto">....</a>
             <a v-if="actIndex<count"  @click="actIndex++" class="iconfont">&#xe6a7;</a>
             <a v-if="actIndex!=count" @click="actIndex=count">末页</a>
       </span>
@@ -14,7 +14,8 @@
         共{{totalRecords}}条记录
       </span>-->
         <span class="gotoPage">
-            每页显示<select  class="pageSelect" v-model="pageLength">
+            每页显示
+            <select  class="pageSelect" v-model="pageLength">
                 <option v-for="item in pageSelectArr"  :value="item" >{{item}}条/页</option>
             </select>条
         </span>
@@ -37,9 +38,9 @@
                 totalRecords:'',//数据总数
                 /*配置相关*/
                 pageSelectArr:this.dataPage.pageSelect||[10,15,20,30],//页数选择，默认[10,15,20,30]
-                resTotal:this.dataPage.translate.iTotalRecords?this.dataPage.translate.iTotalRecords:'iTotalRecords' , //反馈回来的数据总数变量名
-                startRow:this.dataPage.translate.startRow?this.dataPage.translate.startRow:'startRow' , //起始页变量名 默认“startRow”
-                pageSize:this.dataPage.translate.pageSize?this.dataPage.translate.pageSize:'pageSize' , //查询页数变量名 默认“pageSize”
+                resTotal:(this.dataPage.translate&&this.dataPage.translate.iTotalRecords)?this.dataPage.translate.iTotalRecords:'iTotalRecords' , //反馈回来的数据总数变量名
+                startRow:(this.dataPage.translate&&this.dataPage.translate.iTotalRecords)?this.dataPage.translate.startRow:'startRow' , //起始页变量名 默认“startRow”
+                pageSize:(this.dataPage.translate&&this.dataPage.translate.iTotalRecords)?this.dataPage.translate.pageSize:'pageSize' , //查询页数变量名 默认“pageSize”
             }
         },
         computed:{
@@ -79,7 +80,7 @@
         },
         watch:{
             'totalRecords':function () {
-                if(this.totalRecords==0||this.isInit) return
+                if(this.totalRecords==0) return
                 if(this.actIndex>Math.ceil(this.totalRecords/this.pageLength)){
                     this.actIndex=Math.ceil(this.totalRecords/this.pageLength)
                 }
@@ -94,7 +95,6 @@
             },
         },
         mounted:function () {
-//            this.pageLength= this.dataPage.pageSelect?this.dataPage.pageSelect[0]:this.$onePageLine;
             if(!this.waitData){
                 this.getData();
             }
