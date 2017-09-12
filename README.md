@@ -1,7 +1,12 @@
 # paging
 
 ```html
-  <paging-com   :dataPage="getPageData" v-on:transmitActIndex="getActIndexPage" v-on:dataLoading="pageGetDataStart" ref="paging"></paging-com>
+<paging-com  
+            :dataPage="getPageData"
+            v-on:transmitActIndex="getActIndexPage"
+            v-on:dataLoading="pageGetDataStart" 
+            ref="paging">
+</paging-com>
 ```
 
 **配置参数**
@@ -38,14 +43,14 @@ pageMarkGetDataStart:function () {
 
 ```javascript
 getActIndexPage:function (res,actIndex,dataTotal,count,actPage) {
-      this.modelData=res.groups;
-      this.$nextTick(function(){
-          this.loading.loadingData=false  //隐藏加载动画
-      })
-      this.getPageData.actIndex=actIndex
-      this.getPageData.dataTotal=dataTotal
-      this.getPageData.count=count;
-      this.getPageData.actPage=actPage
+        this.modelData=res.groups;
+        this.$nextTick(function(){
+            this.loading.loadingData=false  //隐藏加载动画
+        })
+        this.getPageData.actIndex=actIndex
+        this.getPageData.dataTotal=dataTotal
+        this.getPageData.count=count;
+        this.getPageData.actPage=actPage
   },
 ```
 
@@ -60,5 +65,11 @@ getActIndexPage:function (res,actIndex,dataTotal,count,actPage) {
 使用组件的地方添加属性 waitData
 
 ```html
-  <paging-com   :dataPage="getPageData" waitData=true v-on:transmitActIndex="getActIndexPage" v-on:dataLoading="pageGetDataStart" ref="paging"></paging-com>
+<paging-com 
+            :dataPage="getPageData"
+            waitData=true 
+            v-on:transmitActIndex="getActIndexPage" 
+            v-on:dataLoading="pageGetDataStart"
+            ref="paging">
+</paging-com>
 ```
