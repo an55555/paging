@@ -8028,7 +8028,7 @@ module.exports = g;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_01f8966a_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_04fb1a0c_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(11);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -8047,7 +8047,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_01f8966a_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_04fb1a0c_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -8063,9 +8063,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-01f8966a", Component.options)
+    hotAPI.createRecord("data-v-04fb1a0c", Component.options)
   } else {
-    hotAPI.reload("data-v-01f8966a", Component.options)
+    hotAPI.reload("data-v-04fb1a0c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -8086,13 +8086,13 @@ var content = __webpack_require__(8);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("fd5b0eb8", content, false);
+var update = __webpack_require__(2)("6068ab4c", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-01f8966a\",\"scoped\":false,\"hasInlineConfig\":false}!../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./App.vue", function() {
-     var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-01f8966a\",\"scoped\":false,\"hasInlineConfig\":false}!../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./App.vue");
+   module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04fb1a0c\",\"scoped\":false,\"hasInlineConfig\":false}!../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./App.vue", function() {
+     var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-04fb1a0c\",\"scoped\":false,\"hasInlineConfig\":false}!../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./App.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -8110,7 +8110,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 exports.push([module.i, "@import url(https://an55555.github.io/CSS-Layout/style-l.css);", ""]);
 
 // module
-exports.push([module.i, "\n.timeBox{\n    display: inline-block;\n}\nh1.sayHello{\n    padding: 0 40px;\n}\n#example{\n    padding: 0 40px;\n}\n.tableStyle {\n    min-width: 100%;\n    background: #fff;\n    border-collapse:collapse;  /*重叠的border合度为一条线*/\n    /*控制cellpadding-单元格间距-单元边沿与单元内容之间的空间*/\n    margin: 0;\n    padding: 0;\n}\n.tableStyle td, .tableStyle th {\n    text-align: left;\n    border: solid 1px #cccccc;\n    padding:0; /*控制cellpadding-单元格间距*/\n}\n.tableStyle th {  background: #f3f3f3;\n}\n.tableStyle th .th-p{\n    color: #666;\n    font-weight: bold;\n    word-break: keep-all;   /*th里的内容强制不换行，即最小宽度为字段宽度*/\n}\n.tableStyle td.firstTd {\n    width: 50px;\n    text-align: center;\n}\n.tableStyle td {\n    white-space: normal;\n    word-break: break-all;\n    /*background-clip: padding-box;*/\n}\n.tableStyle .td-p,\n.tableStyle .th-p{\n    padding: 10px;\n    margin: 0;\n}\n.tableStyle tr:nth-child(even){  background: #fafafa;\n}\n.tableStyle .tableCheckBox{position: relative;top: 1px\n}\n/*.tableStyle tr:hover{  background: #f5f5f5}*/\n\n", ""]);
+exports.push([module.i, "\n.timeBox{\n    display: inline-block;\n}\nh1.sayHello{\n    padding: 0 40px;\n}\n#example{\n    padding: 0 40px;\n}\n.tableStyle {\n    min-width: 100%;\n    background: #fff;\n    border-collapse:collapse;  /*重叠的border合度为一条线*/\n    /*控制cellpadding-单元格间距-单元边沿与单元内容之间的空间*/\n    margin: 0;\n    padding: 0;\n}\n.tableStyle td, .tableStyle th {\n    text-align: left;\n    border: solid 1px #cccccc;\n    padding:0; /*控制cellpadding-单元格间距*/\n}\n.tableStyle th {  background: #f3f3f3;\n}\n.tableStyle th .th-p{\n    color: #666;\n    font-weight: bold;\n    word-break: keep-all;   /*th里的内容强制不换行，即最小宽度为字段宽度*/\n}\n.tableStyle td.firstTd {\n    width: 50px;\n    text-align: center;\n}\n.tableStyle td {\n    white-space: normal;\n    word-break: break-all;\n    /*background-clip: padding-box;*/\n}\n.tableStyle .td-p,\n.tableStyle .th-p{\n    padding: 10px;\n    margin: 0;\n}\n.tableStyle tr:nth-child(even){  background: #fafafa;\n}\n.tableStyle .tableCheckBox{position: relative;top: 1px\n}\n/*.tableStyle tr:hover{  background: #f5f5f5}*/\n.loadAni{\n    width: 60px;\n    height: 60px;\n    border-radius: 50%;\n    border:solid 3px #3c98e6;\n    position: absolute;\n    animation: rote 2s infinite;\n    left: 50%;\n    margin-left: -30px;\n    top: 50px;\n}\n.loadAni:after{\n    content: '';\n    width: 10px;\n    height: 10px;\n    background: #fff;\n    border-radius: 50%;\n    position: absolute;\n    left: 50%;\n    margin-left: -5px;\n    top: -6px;\n}\n@keyframes rote {\nfrom{\n        transform: rotate(0);\n}\nto{\n        transform: rotate(360deg);\n}\n}\n\n", ""]);
 
 // exports
 
@@ -8189,6 +8189,7 @@ module.exports = function listToStyles (parentId, list) {
 //
 //
 //
+//
 
     /* harmony default export */ __webpack_exports__["a"] = ({
         components:{
@@ -8198,15 +8199,18 @@ module.exports = function listToStyles (parentId, list) {
             return {
                 modelData:[],
                 getPageData:{
-                    httpUrl:'http://imoocnote.calfnote.com/inter/getClasses.php',  //分页绑定的接口
+                    httpUrl:'https://api.stackexchange.com/2.2/badges',  //分页绑定的接口
                     arg:{                          //接口参数
+                        order:'desc',
+                        sort:'rank',
+                        site:'stackoverflow'
                     },
                     findType:'page', //直接根据页数查询,如果没有配置此项，默认按字段起始位置查询（可无）
-                    pageSelect:[5,10],
+//                    pageSelect:[5,10],
                     translate:{  //字段名转换（可无）
-                        resTotal:'totalCount',//回调的总条数名字，默认为iTotalRecords（可无）
-                        startRow:'curPage',//开始页名字，默认startRow（可无）
-                        pageSize:'pageSize2',//查询页数,默认pageSize（可无）
+                        resTotal:'quota_max',//回调的总条数名字，默认为iTotalRecords（可无）
+                        startRow:'page',//开始页名字，默认startRow（可无）
+                        pageSize:'pagesize',//查询页数,默认pageSize（可无）
                     },
                     pageInfo:{
                         actIndex:'',//actIndex:保存当前显示的数据是第几条开始的
@@ -8227,7 +8231,7 @@ module.exports = function listToStyles (parentId, list) {
             },
             /*获得数据后的回调*/
             pageCallback:function (res,pageInfo) {
-                this.modelData=res.data;
+                this.modelData=res.items;
                 this.$nextTick(function(){
                     this.loading.loadingData=false  //隐藏加载动画
                 })
@@ -8275,8 +8279,26 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "margin-bottom": "10px"
     }
   }, [_vm._v("获取数据中...")]), _vm._v(" "), _c('div', {
-    staticClass: "tableOutBox "
-  }, [_c('table', {
+    staticClass: "tableOutBox ",
+    staticStyle: {
+      "min-height": "300px",
+      "position": "relative"
+    }
+  }, [_c('span', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.loading.loadingData),
+      expression: "loading.loadingData"
+    }],
+    staticClass: "loadAni"
+  }), _vm._v(" "), _c('table', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.loading.loadingData),
+      expression: "!loading.loadingData"
+    }],
     staticClass: "tableStyle"
   }, [_vm._m(0), _vm._v(" "), _c('tbody', _vm._l((_vm.modelData), function(item, index) {
     return _c('tr', [_c('td', {
@@ -8285,13 +8307,13 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       staticClass: "td-p"
     }, [_vm._v(_vm._s(_vm.getPageData.pageInfo.pageLength * (_vm.getPageData.pageInfo.actIndex - 1) + index + 1))])]), _vm._v(" "), _c('td', [_c('p', {
       staticClass: "td-p"
-    }, [_vm._v(_vm._s(item.id))])]), _vm._v(" "), _c('td', [_c('p', {
+    }, [_vm._v(_vm._s(item.award_count))])]), _vm._v(" "), _c('td', [_c('p', {
       staticClass: "td-p"
-    }, [_vm._v(_vm._s(item.mid))])]), _vm._v(" "), _c('td', [_c('p', {
+    }, [_vm._v(_vm._s(item.badge_id))])]), _vm._v(" "), _c('td', [_c('p', {
       staticClass: "td-p"
-    }, [_vm._v(_vm._s(item.title))])]), _vm._v(" "), _c('td', [_c('p', {
+    }, [_vm._v(_vm._s(item.link))])]), _vm._v(" "), _c('td', [_c('p', {
       staticClass: "td-p"
-    }, [_vm._v(_vm._s(item.timespan))])])])
+    }, [_vm._v(_vm._s(item.name))])])])
   }))])]), _vm._v(" "), _c('paging-data', {
     ref: "paging",
     attrs: {
@@ -8306,7 +8328,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "text-align": "center",
       "color": "orangered"
     }
-  }, [_vm._v("\n        由于当前接口不支持自定义每页的数据数量，所以每页显示几条在这里不能看到效果\n    ")])], 1)
+  }, [_vm._v("\n        分页组件内调用接口的函数名为$httpGet（src/config/global/global.js中声明的）\n    ")])], 1)
 }
 var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('thead', [_c('tr', [_c('th', {
@@ -8329,7 +8351,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-01f8966a", esExports)
+     require("vue-hot-reload-api").rerender("data-v-04fb1a0c", esExports)
   }
 }
 
@@ -8342,7 +8364,7 @@ if (false) {
  */
 module.exports={
     install(Vue,options){
-        Vue.prototype.$onePageLine=5;
+        // Vue.prototype.$onePageLine=10;
         Vue.prototype.$jsonToParams=function (arg) {
             var arr=[]
             for(var i in arg){

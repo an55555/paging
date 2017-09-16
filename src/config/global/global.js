@@ -3,7 +3,7 @@
  */
 module.exports={
     install(Vue,options){
-        Vue.prototype.$onePageLine=5;
+        // Vue.prototype.$onePageLine=10;
         Vue.prototype.$jsonToParams=function (arg) {
             var arr=[]
             for(var i in arg){

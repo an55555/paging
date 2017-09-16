@@ -32,7 +32,7 @@
                 getDataPage:this.dataPage,
                 actIndex:1,  //默认显示第一页
                 gotoPageNum:1,//跳转至
-                pageLength:this.dataPage.pageSelect?this.dataPage.pageSelect[0]:this.$onePageLine,//每页显示几条
+                pageLength:this.dataPage.pageSelect?this.dataPage.pageSelect[0]:10,//每页显示几条
                 totalRecords:'',//数据总数
                 /*配置相关*/
                 pageSelectArr:this.dataPage.pageSelect||[10,15,20,30],//页数选择，默认[10,15,20,30]

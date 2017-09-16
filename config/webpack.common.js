@@ -43,7 +43,7 @@ module.exports={
     plugins:[
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
-            title:'DatePicker-VUE',
+            title:'Paging-VUE',
             filename:'index.html', //通过模板生成的文件名
             template:'index.html',//模板路径
             inject:true, //是否自动在模板文件添加 自动生成的js文件链接

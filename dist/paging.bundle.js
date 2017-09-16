@@ -18,7 +18,7 @@ webpackJsonp([0],[
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_selector_type_script_index_0_paging_vue__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_507c9d64_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_paging_vue__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_eb735c44_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_paging_vue__ = __webpack_require__(18);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -32,12 +32,12 @@ var normalizeComponent = __webpack_require__(3)
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-507c9d64"
+var __vue_scopeId__ = "data-v-eb735c44"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_selector_type_script_index_0_paging_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_507c9d64_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_paging_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_eb735c44_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_paging_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -53,9 +53,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-507c9d64", Component.options)
+    hotAPI.createRecord("data-v-eb735c44", Component.options)
   } else {
-    hotAPI.reload("data-v-507c9d64", Component.options)
+    hotAPI.reload("data-v-eb735c44", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -77,13 +77,13 @@ var content = __webpack_require__(16);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("6a8096c0", content, false);
+var update = __webpack_require__(2)("5795ad29", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-507c9d64\",\"scoped\":true,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./paging.vue", function() {
-     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-507c9d64\",\"scoped\":true,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./paging.vue");
+   module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-eb735c44\",\"scoped\":true,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./paging.vue", function() {
+     var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-eb735c44\",\"scoped\":true,\"hasInlineConfig\":false}!../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./paging.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -101,7 +101,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\n@font-face {\n    font-family: 'iconfont';  /* project id 417575 */\n    src: url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.eot');\n    src: url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.eot?#iefix') format('embedded-opentype'),\n    url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.woff') format('woff'),\n    url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.ttf') format('truetype'),\n    url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.svg#iconfont') format('svg');\n}\n.iconfont[data-v-507c9d64]{\n    font-family:\"iconfont\" !important;\n    font-size:16px;font-style:normal;\n    -webkit-font-smoothing: antialiased;\n    -webkit-text-stroke-width: 0.2px;\n    -moz-osx-font-smoothing: grayscale;\n}\nbody[data-v-507c9d64]{\n    font: 14px Helvetica Neue,Helvetica,PingFang SC,\\5FAE\\8F6F\\96C5\\9ED1,Tahoma,Arial,sans-serif;\n}\n*[data-v-507c9d64]{\n    box-sizing: border-box!important;\n}\n.lpagination[data-v-507c9d64]{\n    margin: 10px 0;\n    spanst-style: none;\n    color: #999;\n    text-align: center;\n    /*text-align: left;*/\n}\n.lpagination span[data-v-507c9d64], .lpagination .gotoPage a[data-v-507c9d64]{\n    vertical-align: middle;\n    display: inline-block;\n    border-radius: 3px;\n    overflow: hidden;\n}\n.lpagination  .paging[data-v-507c9d64]{\n    font-size: 0;\n    border: 1px solid #e2e2e2;\n    border-right: 0;\n}\n.lpagination .pageSelect[data-v-507c9d64]{\n    border: 1px solid #e2e2e2;\n    margin: 0 5px ;\n    cursor: pointer;\n    height: 28px;\n    border-radius: 3px;\n}\n.lpagination  .paging a[data-v-507c9d64],.lpagination .gotoPage a[data-v-507c9d64]{\n    display: inline-block;\n    padding:0 15px;\n    line-height: 26px;\n    border-right: 1px solid #e2e2e2;\n    color: #333;\n    cursor: pointer;\n    font-size: 12px;\n    /*margin:0 0 0 -1px ;*/\n    background: #fff;\n}\n.lpagination .paging .pageAct[data-v-507c9d64]{\n    background: #3c98e6;\n    /*background: #009688;*/\n    color: #fff;\n}\n.lpagination .gotoPage[data-v-507c9d64]{margin: 0 7px\n}\n.lpagination .pageNumInput[data-v-507c9d64]{\n    height: 28px;\n    line-height: 28px;\n    border: 1px solid #e2e2e2;\n    border-radius: 2px;\n    vertical-align: top;\n    background-color: #fff;\n    width: 50px;\n    margin: 0 5px;\n    text-align: center;\n    outline: none;\n    box-sizing: border-box!important;\n}\n.lpagination .gotoPage a.pageGotoBtn[data-v-507c9d64]{\n    border: 1px solid #e2e2e2;\n    margin-left: 7px;\n}\n\n", ""]);
+exports.push([module.i, "\n@font-face {\n    font-family: 'iconfont';  /* project id 417575 */\n    src: url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.eot');\n    src: url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.eot?#iefix') format('embedded-opentype'),\n    url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.woff') format('woff'),\n    url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.ttf') format('truetype'),\n    url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.svg#iconfont') format('svg');\n}\n.iconfont[data-v-eb735c44]{\n    font-family:\"iconfont\" !important;\n    font-size:16px;font-style:normal;\n    -webkit-font-smoothing: antialiased;\n    -webkit-text-stroke-width: 0.2px;\n    -moz-osx-font-smoothing: grayscale;\n}\nbody[data-v-eb735c44]{\n    font: 14px Helvetica Neue,Helvetica,PingFang SC,\\5FAE\\8F6F\\96C5\\9ED1,Tahoma,Arial,sans-serif;\n}\n*[data-v-eb735c44]{\n    box-sizing: border-box!important;\n}\n.lpagination[data-v-eb735c44]{\n    margin: 10px 0;\n    spanst-style: none;\n    color: #999;\n    text-align: center;\n    /*text-align: left;*/\n}\n.lpagination span[data-v-eb735c44], .lpagination .gotoPage a[data-v-eb735c44]{\n    vertical-align: middle;\n    display: inline-block;\n    border-radius: 3px;\n    overflow: hidden;\n}\n.lpagination  .paging[data-v-eb735c44]{\n    font-size: 0;\n    border: 1px solid #e2e2e2;\n    border-right: 0;\n}\n.lpagination .pageSelect[data-v-eb735c44]{\n    border: 1px solid #e2e2e2;\n    margin: 0 5px ;\n    cursor: pointer;\n    height: 28px;\n    border-radius: 3px;\n}\n.lpagination  .paging a[data-v-eb735c44],.lpagination .gotoPage a[data-v-eb735c44]{\n    display: inline-block;\n    padding:0 15px;\n    line-height: 26px;\n    border-right: 1px solid #e2e2e2;\n    color: #333;\n    cursor: pointer;\n    font-size: 12px;\n    /*margin:0 0 0 -1px ;*/\n    background: #fff;\n}\n.lpagination .paging .pageAct[data-v-eb735c44]{\n    background: #3c98e6;\n    /*background: #009688;*/\n    color: #fff;\n}\n.lpagination .gotoPage[data-v-eb735c44]{margin: 0 7px\n}\n.lpagination .pageNumInput[data-v-eb735c44]{\n    height: 28px;\n    line-height: 28px;\n    border: 1px solid #e2e2e2;\n    border-radius: 2px;\n    vertical-align: top;\n    background-color: #fff;\n    width: 50px;\n    margin: 0 5px;\n    text-align: center;\n    outline: none;\n    box-sizing: border-box!important;\n}\n.lpagination .gotoPage a.pageGotoBtn[data-v-eb735c44]{\n    border: 1px solid #e2e2e2;\n    margin-left: 7px;\n}\n\n", ""]);
 
 // exports
 
@@ -145,7 +145,7 @@ exports.push([module.i, "\n@font-face {\n    font-family: 'iconfont';  /* projec
                 getDataPage:this.dataPage,
                 actIndex:1,  //默认显示第一页
                 gotoPageNum:1,//跳转至
-                pageLength:this.dataPage.pageSelect?this.dataPage.pageSelect[0]:this.$onePageLine,//每页显示几条
+                pageLength:this.dataPage.pageSelect?this.dataPage.pageSelect[0]:10,//每页显示几条
                 totalRecords:'',//数据总数
                 /*配置相关*/
                 pageSelectArr:this.dataPage.pageSelect||[10,15,20,30],//页数选择，默认[10,15,20,30]
@@ -348,7 +348,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-507c9d64", esExports)
+     require("vue-hot-reload-api").rerender("data-v-eb735c44", esExports)
   }
 }
 
