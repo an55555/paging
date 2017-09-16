@@ -36,9 +36,9 @@
                 totalRecords:'',//数据总数
                 /*配置相关*/
                 pageSelectArr:this.dataPage.pageSelect||[10,15,20,30],//页数选择，默认[10,15,20,30]
-                resTotal:(this.dataPage.translate&&this.dataPage.translate.iTotalRecords)?this.dataPage.translate.iTotalRecords:'iTotalRecords' , //反馈回来的数据总数变量名
-                startRow:(this.dataPage.translate&&this.dataPage.translate.iTotalRecords)?this.dataPage.translate.startRow:'startRow' , //起始页变量名 默认“startRow”
-                pageSize:(this.dataPage.translate&&this.dataPage.translate.iTotalRecords)?this.dataPage.translate.pageSize:'pageSize' , //查询页数变量名 默认“pageSize”
+                resTotal:(this.dataPage.translate&&this.dataPage.translate.resTotal)?this.dataPage.translate.resTotal:'iTotalRecords' , //反馈回来的数据总数变量名
+                startRow:(this.dataPage.translate&&this.dataPage.translate.startRow)?this.dataPage.translate.startRow:'startRow' , //起始页变量名 默认“startRow”
+                pageSize:(this.dataPage.translate&&this.dataPage.translate.pageSize)?this.dataPage.translate.pageSize:'pageSize' , //查询页数变量名 默认“pageSize”
             }
         },
         computed:{
@@ -69,9 +69,15 @@
                 this.$emit('dataLoading',true)
                 this.getDataPage.arg[this.startRow]=!this.dataPage.findType?(this.actIndex-1)*this.pageLength:this.actIndex
                 this.getDataPage.arg[this.pageSize]=this.pageLength
-                this.$httpPost(this.getDataPage.httpUrl,this.getDataPage.arg,function (res) {
+                this.$httpGet(this.getDataPage.httpUrl,this.getDataPage.arg,function (res) {
                     this.totalRecords=res[this.resTotal]
-                    this.$emit('transmitActIndex',res,this.pageLength*(this.actIndex-1),this.totalRecords,this.count,this.actIndex)
+                    var pageInfo={
+                        dataTotal:this.totalRecords,
+                        count:this.count,
+                        actIndex:this.actIndex,
+                        pageLength:this.pageLength
+                    }
+                    this.$emit('transmitData',res,pageInfo)
                 }.bind(this))
             },
 
@@ -101,6 +107,20 @@
     }
 </script>
 <style scoped>
+    @font-face {
+        font-family: 'iconfont';  /* project id 417575 */
+        src: url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.eot');
+        src: url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.eot?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.woff') format('woff'),
+        url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_417575_qqiq45fgxbo9lik9.svg#iconfont') format('svg');
+    }
+    .iconfont{
+        font-family:"iconfont" !important;
+        font-size:16px;font-style:normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;}
     body{
         font: 14px Helvetica Neue,Helvetica,PingFang SC,\5FAE\8F6F\96C5\9ED1,Tahoma,Arial,sans-serif;
     }
