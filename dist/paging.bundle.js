@@ -1,30 +1,19 @@
-webpackJsonp([0],[
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */
+webpackJsonp([0],{
+
+/***/ 339:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_selector_type_script_index_0_paging_vue__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_eb735c44_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_paging_vue__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_paging_vue__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_paging_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_paging_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_eb735c44_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_paging_vue__ = __webpack_require__(343);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(15)
+  __webpack_require__(340)
 }
-var normalizeComponent = __webpack_require__(3)
+var normalizeComponent = __webpack_require__(127)
 /* script */
 
 /* template */
@@ -36,7 +25,7 @@ var __vue_scopeId__ = "data-v-eb735c44"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_selector_type_script_index_0_paging_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_paging_vue___default.a,
   __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_eb735c44_hasScoped_true_node_modules_vue_loader_lib_selector_type_template_index_0_paging_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
@@ -66,18 +55,18 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 14 */,
-/* 15 */
+
+/***/ 340:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(16);
+var content = __webpack_require__(341);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("5795ad29", content, false);
+var update = __webpack_require__(126)("5795ad29", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -93,10 +82,11 @@ if(false) {
 }
 
 /***/ }),
-/* 16 */
+
+/***/ 341:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(1)(undefined);
+exports = module.exports = __webpack_require__(125)(undefined);
 // imports
 
 
@@ -107,10 +97,16 @@ exports.push([module.i, "\n@font-face {\n    font-family: 'iconfont';  /* projec
 
 
 /***/ }),
-/* 17 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+/***/ 342:
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 //
 //
 //
@@ -137,91 +133,94 @@ exports.push([module.i, "\n@font-face {\n    font-family: 'iconfont';  /* projec
 //
 //
 
-    /* harmony default export */ __webpack_exports__["a"] = ({
-        props: ['dataPage','waitData'],
-        data(){
-            return {
-//                count:Math.ceil(this.totalRecords/this.$onePageLine),
-                getDataPage:this.dataPage,
-                actIndex:1,  //默认显示第一页
-                gotoPageNum:1,//跳转至
-                pageLength:this.dataPage.pageSelect?this.dataPage.pageSelect[0]:10,//每页显示几条
-                totalRecords:'',//数据总数
-                /*配置相关*/
-                pageSelectArr:this.dataPage.pageSelect||[10,15,20,30],//页数选择，默认[10,15,20,30]
-                resTotal:(this.dataPage.translate&&this.dataPage.translate.resTotal)?this.dataPage.translate.resTotal:'iTotalRecords' , //反馈回来的数据总数变量名
-                startRow:(this.dataPage.translate&&this.dataPage.translate.startRow)?this.dataPage.translate.startRow:'startRow' , //起始页变量名 默认“startRow”
-                pageSize:(this.dataPage.translate&&this.dataPage.translate.pageSize)?this.dataPage.translate.pageSize:'pageSize' , //查询页数变量名 默认“pageSize”
-            }
+exports.default = {
+    props: ['dataPage', 'waitData'],
+    data: function data() {
+        return {
+            //                count:Math.ceil(this.totalRecords/this.$onePageLine),
+            getDataPage: this.dataPage,
+            actIndex: 1, //默认显示第一页
+            gotoPageNum: 1, //跳转至
+            pageLength: this.dataPage.pageSelect ? this.dataPage.pageSelect[0] : 10, //每页显示几条
+            totalRecords: '', //数据总数
+            /*配置相关*/
+            pageSelectArr: this.dataPage.pageSelect || [10, 15, 20, 30], //页数选择，默认[10,15,20,30]
+            resTotal: this.dataPage.translate && this.dataPage.translate.resTotal ? this.dataPage.translate.resTotal : 'iTotalRecords', //反馈回来的数据总数变量名
+            startRow: this.dataPage.translate && this.dataPage.translate.startRow ? this.dataPage.translate.startRow : 'startRow', //起始页变量名 默认“startRow”
+            pageSize: this.dataPage.translate && this.dataPage.translate.pageSize ? this.dataPage.translate.pageSize : 'pageSize' //查询页数变量名 默认“pageSize”
+        };
+    },
+
+    computed: {
+        count: function count() {
+            //总页数
+            return Math.ceil(this.totalRecords / this.pageLength);
         },
-        computed:{
-            count:function () {  //总页数
-              return Math.ceil(this.totalRecords/this.pageLength)
-            },
-            pagingNum:function () {
-                if(this.count<=5){
-                    return [1,2,3,4,5]
-                }else{
-                    if(this.actIndex<=3){
-                        return [1,2,3,4,5]
-                    }else if(this.actIndex>=this.count-2){
-                        return [this.count-4,this.count-3,this.count-2,this.count-1,this.count]
-                    }else{
-                        return [this.actIndex-2,this.actIndex-1,this.actIndex,this.actIndex+1,this.actIndex+2]
-                    }
+        pagingNum: function pagingNum() {
+            if (this.count <= 5) {
+                return [1, 2, 3, 4, 5];
+            } else {
+                if (this.actIndex <= 3) {
+                    return [1, 2, 3, 4, 5];
+                } else if (this.actIndex >= this.count - 2) {
+                    return [this.count - 4, this.count - 3, this.count - 2, this.count - 1, this.count];
+                } else {
+                    return [this.actIndex - 2, this.actIndex - 1, this.actIndex, this.actIndex + 1, this.actIndex + 2];
                 }
-            },
-
-        },
-
-        methods:{
-            pageNumKeyup:function () {  //输入跳转页面格式检查
-                this.gotoPageNum=this.gotoPageNum<=0?this.gotoPageNum=1:this.gotoPageNum>this.count?this.count:this.gotoPageNum
-            },
-            getData:function () {  //获取数据
-                this.$emit('dataLoading',true)
-                this.getDataPage.arg[this.startRow]=!this.dataPage.findType?(this.actIndex-1)*this.pageLength:this.actIndex
-                this.getDataPage.arg[this.pageSize]=this.pageLength
-                this.$httpGet(this.getDataPage.httpUrl,this.getDataPage.arg,function (res) {
-                    this.totalRecords=res[this.resTotal]
-                    var pageInfo={
-                        dataTotal:this.totalRecords,
-                        count:this.count,
-                        actIndex:this.actIndex,
-                        pageLength:this.pageLength
-                    }
-                    this.$emit('transmitData',res,pageInfo)
-                }.bind(this))
-            },
-
-        },
-        watch:{
-            'totalRecords':function () {
-                if(this.totalRecords==0) return
-                if(this.actIndex>Math.ceil(this.totalRecords/this.pageLength)){
-                    this.actIndex=Math.ceil(this.totalRecords/this.pageLength)
-                }
-            },
-
-            'actIndex':function () {
-                this.getData(this.actIndex);
-            },
-            'pageLength':function () {
-                this.actIndex=1
-                this.getData(this.actIndex);
-            },
-        },
-        mounted:function () {
-            if(!this.waitData){
-                this.getData();
             }
-
         }
-    });
 
+    },
+
+    methods: {
+        pageNumKeyup: function pageNumKeyup() {
+            //输入跳转页面格式检查
+            this.gotoPageNum = this.gotoPageNum <= 0 ? this.gotoPageNum = 1 : this.gotoPageNum > this.count ? this.count : this.gotoPageNum;
+        },
+        getData: function getData() {
+            //获取数据
+            this.$emit('dataLoading', true);
+            this.getDataPage.arg[this.startRow] = !this.dataPage.findType ? (this.actIndex - 1) * this.pageLength : this.actIndex;
+            this.getDataPage.arg[this.pageSize] = this.pageLength;
+            this.$httpGet(this.getDataPage.httpUrl, this.getDataPage.arg, function (res) {
+                this.totalRecords = res[this.resTotal];
+                var pageInfo = {
+                    dataTotal: this.totalRecords,
+                    count: this.count,
+                    actIndex: this.actIndex,
+                    pageLength: this.pageLength
+                };
+                this.$emit('transmitData', res, pageInfo);
+            }.bind(this));
+        }
+
+    },
+    watch: {
+        'totalRecords': function totalRecords() {
+            if (this.totalRecords == 0) return;
+            if (this.actIndex > Math.ceil(this.totalRecords / this.pageLength)) {
+                this.actIndex = Math.ceil(this.totalRecords / this.pageLength);
+            }
+        },
+
+        'actIndex': function actIndex() {
+            this.getData(this.actIndex);
+        },
+        'pageLength': function pageLength() {
+            this.actIndex = 1;
+            this.getData(this.actIndex);
+        }
+    },
+    mounted: function mounted() {
+        if (!this.waitData) {
+            this.getData();
+        }
+    }
+};
 
 /***/ }),
-/* 18 */
+
+/***/ 343:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -353,4 +352,5 @@ if (false) {
 }
 
 /***/ })
-]);
+
+});
