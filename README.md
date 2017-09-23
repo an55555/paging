@@ -1,5 +1,7 @@
 # paging
 
+**[Demo](https://an55555.github.io/paging-VUE/dist/)**
+
 ```html
      <paging-data
                 :dataPage="getPageData"
